@@ -5,12 +5,12 @@ public class U1 extends Rocket {
   }
 
   public boolean launch() {
-    float launchModifier = 5 * (getWeight() / 18) / 100;
+    double launchModifier = 5 * (getWeight() / 18.00) / 100;
     return getEventResult(launchModifier);
   }
 
   public boolean land() {
-    float landModifier = (getWeight() / 18) / 100;
+    double landModifier = (getWeight() / 18) / 100;
     return getEventResult(landModifier);
   }
 }

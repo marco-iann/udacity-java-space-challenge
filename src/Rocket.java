@@ -21,7 +21,7 @@ public class Rocket implements SpaceShip {
     return weight;
   }
 
-  public boolean getEventResult(float modifier) {
+  public boolean getEventResult(double modifier) {
     return Math.random() > modifier;
   }
 
