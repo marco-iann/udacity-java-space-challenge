@@ -13,6 +13,18 @@ public class Rocket implements SpaceShip {
     this.maxWeight = maxWeight;
   }
 
+  public int getCost() {
+    return cost;
+  }
+
+  public int getWeight() {
+    return weight;
+  }
+
+  public boolean getEventResult(float modifier) {
+    return Math.random() > modifier;
+  }
+
   public boolean launch() {
     return true;
   }
