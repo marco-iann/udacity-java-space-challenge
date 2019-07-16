@@ -10,7 +10,7 @@ public class U1 extends Rocket {
   }
 
   public boolean land() {
-    double landModifier = (getWeight() / 18) / 100;
+    double landModifier = (getWeight() / 18.00) / 100;
     return getEventResult(landModifier);
   }
 }
